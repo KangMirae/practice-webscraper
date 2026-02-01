@@ -1,3 +1,4 @@
+# services/scraper_ecommerce.py
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -8,7 +9,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 
-def scrape_website():
+def scraper_ecommerce_website():
     # Configurar Selenium
     options = Options()
     options.add_argument('--headless')  # Ejecutar en modo headless
@@ -32,8 +33,6 @@ def scrape_website():
         WebDriverWait(driver, 10).until(
             EC.presence_of_all_elements_located((By.CLASS_NAME, "thumbnail"))
         )
-        titles = driver.find_elements(By.CSS_SELECTOR, "h1")
-        urls = driver.find_elements(By.CSS_SELECTOR, "a")
 
         products = driver.find_elements(By.CLASS_NAME, "thumbnail")
         
