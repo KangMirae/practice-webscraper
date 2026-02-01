@@ -1,6 +1,3 @@
-### 3. `cronjob` 브랜치 (Automation)
-
-```markdown
 # Step 3: Scheduling with Cronjob
 
 This stage focuses on automation. I configured a **Cronjob** inside the Linux container to run the scraper every 5 minutes automatically.
@@ -17,3 +14,4 @@ docker exec -it webscraper-server-1 service cron status
 
 # Verify the registered crontab
 docker exec -it webscraper-server-1 crontab -l
+```
