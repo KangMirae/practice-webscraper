@@ -264,6 +264,6 @@ poetry.toml
 pyrightconfig.json
 
 # custom
-screenshots/*
+screenshots/captura_*.png
 
 # End of https://www.toptal.com/developers/gitignore/api/python,django
