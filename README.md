@@ -1,6 +1,3 @@
-### 2. `docker` 브랜치 (Containerization)
-
-```markdown
 # Step 2: Dockerizing the Scraper
 
 In this step, I moved the local development environment into a **Docker container**. This ensures the scraper runs consistently regardless of the host OS.
