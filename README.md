@@ -1,6 +1,3 @@
-### 4. `debug` 브랜치 (Screenshots & Monitoring)
-
-```markdown
 # Step 4: Debugging with Screenshots
 
 The final step adds a visual debugging layer. Since the browser runs in headless mode (no UI), I implemented a feature to capture and save screenshots.
