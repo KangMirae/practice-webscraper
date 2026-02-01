@@ -88,6 +88,9 @@ RUN python -m pip install --no-cache-dir -r requirements.txt
 RUN touch /app/db.sqlite3 && \
     chmod -R 777 /app
 
+RUN mkdir -p /app/screenshots && chmod 777 /app/screenshots
+VOLUME ["/app/screenshots"]
+
 # Copy application source code
 COPY . .
 
