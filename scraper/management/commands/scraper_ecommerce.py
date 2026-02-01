@@ -1,5 +1,6 @@
+# management/commands/scraper_ecommerce.py
 from django.core.management.base import BaseCommand
-from scraper.services.scraper_ecommerce import scrape_ecommerce_site
+from scraper.services.scraper_ecommerce import scraper_ecommerce_website
 from scraper.models import EcommerceProduct 
 
 class Command(BaseCommand):
@@ -8,7 +9,7 @@ class Command(BaseCommand):
     def handle(self, *args, **kwargs):
         self.stdout.write("스크래핑 시작...")
         
-        data = scrape_ecommerce_site()
+        data = scraper_ecommerce_website()
         
         for item in data:
             EcommerceProduct.objects.create(
